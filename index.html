@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html class="no-js">
+	<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Scramble With Friends | MoveMakers</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/google-bootstrap.css">
+        <link rel="stylesheet" href="main.css">
+        <!--[if lt IE 9]>
+            <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+            <script>window.html5 || document.write('<script src="../js/vendor/html5shiv.js"><\/script>')</script>
+        <![endif]-->
+        <style>body{padding-top:40px;}</style>
+    </head>
+    <body>
+    	<div class="navbar navbar-fixed-top navbar-inverse">
+			<div class="navbar-inner">
+				<ul class="nav">
+					<li><a href="../index.html">MoveMakers</a></li>
+					<li><a href="../hanginghelper/index.html">Hanging With Friends</a></li>
+					<li class="active"><a href="index.html">Scramble With Friends</a></li>
+					<li><a href="../riskbattler/index.html">Risk Battler</a></li>
+					<li><a href="../sudoku/index.html">Sudoku</a></li>
+					<li><a href="../hanoi/index.html">Tower of Hanoi</a></li>
+					<li><a href="../mastermind/index.html">Mastermind</a></li>
+				</ul>
+			</div>
+		</div>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+        <div id="container">
+        	<h1>Scramble With Friends</h1>
+			<div id="left">
+				<form name="scramble" autocomplete="off">
+					<h4>Enter the tiles of your board ('Q' for 'Qu')</h4>
+					<input type="text" maxlength="16" id="tiles" />
+					<h4>Drag and drop bonuses onto applicable tiles</h4>
+					<div id="bonuses">
+						<div id="dl">DL</div><div id="dw">DW</div><div id="tl">TL</div><div id="tw">TW</div>
+						<div id="bx">Clear</div>
+					</div>
+					<div id="tray-container">
+						<div class="tile" id="c0"><div class="letter"></div><div class="points"></div><div class="bonus"></div></div>
+						<div class="tile" id="c1"><div class="letter"></div><div class="points"></div><div class="bonus"></div></div>
+						<div class="tile" id="c2"><div class="letter"></div><div class="points"></div><div class="bonus"></div></div>
+						<div class="tile" id="c3"><div class="letter"></div><div class="points"></div><div class="bonus"></div></div>
+						<div class="tile" id="c4"><div class="letter"></div><div class="points"></div><div class="bonus"></div></div>
+						<div class="tile" id="c5"><div class="letter"></div><div class="points"></div><div class="bonus"></div></div>
+						<div class="tile" id="c6"><div class="letter"></div><div class="points"></div><div class="bonus"></div></div>
+						<div class="tile" id="c7"><div class="letter"></div><div class="points"></div><div class="bonus"></div></div>
+						<div class="tile" id="c8"><div class="letter"></div><div class="points"></div><div class="bonus"></div></div>
+						<div class="tile" id="c9"><div class="letter"></div><div class="points"></div><div class="bonus"></div></div>
+						<div class="tile" id="ca"><div class="letter"></div><div class="points"></div><div class="bonus"></div></div>
+						<div class="tile" id="cb"><div class="letter"></div><div class="points"></div><div class="bonus"></div></div>
+						<div class="tile" id="cc"><div class="letter"></div><div class="points"></div><div class="bonus"></div></div>
+						<div class="tile" id="cd"><div class="letter"></div><div class="points"></div><div class="bonus"></div></div>
+						<div class="tile" id="ce"><div class="letter"></div><div class="points"></div><div class="bonus"></div></div>
+						<div class="tile" id="cf"><div class="letter"></div><div class="points"></div><div class="bonus"></div></div>
+					</div>
+					<div id="get-words">Get Words & Scores</div>
+				</form>
+			</div>
+			<div id="right">
+				<div class="status">All the word combinations and their scores will appear on this side.</div>
+				<div class="results-container">
+					<div class="results"></div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.8.3.min.js"><\/script>')</script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.0/jquery-ui.min.js"></script>
+        <script src="../js/vendor/bootstrap.min.js"></script>
+        <script src="dictionary.js"></script>
+        <script src="script.js"></script>
+	</body>
+</html>
